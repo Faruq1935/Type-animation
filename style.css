@@ -1,0 +1,56 @@
+@import url('https://fonts.googleapis.com/css2?family=RocknRoll+One&display=swap');
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  min-height: 100%;
+  margin-top: 80%;
+  background-color: #202020;
+}
+.loader {
+  position: relative;
+  -webkit-box-reflect: below -18px linear-gradient(transparent, #0002);
+}
+.loader:before{
+  content: '';
+  position: absolute;
+  top: 0;
+  right: 0;
+  width: 2px;
+  height: 100%;
+  background-color: #2196F3;
+  animation: blinkCursor 0.8s steps(3) infinite;
+}
+@keyframes blinkCursor {
+  0%,75%
+  {
+    opacity: 1;
+  }
+  76%,100% {
+    opacity: 0;
+  }
+  
+}
+.loader h1{
+  color: #03A9F4;
+font-family: Courier New;
+letter-spacing: 4px;
+font-size: 10mm;
+text-transform: uppercase;
+animation: typing 8s steps(12) infinite;
+overflow: hidden;
+}
+@keyframes typing {
+  0%,90%,100% {
+    width: 0;
+  }
+  30%,36%{
+    width: 328.88px;
+  }
+}
